@@ -1,0 +1,14 @@
+mysql -u gauravhanda -p -h secondary-rds.ctxsvk1ocvhe.us-east-1.rds.amazonaws.com
+
+CREATE TABLE examples_db(
+tutorial_id INT NOT NULL AUTO_INCREMENT,
+tutorial_title VARCHAR(100) NOT NULL,
+PRIMARY KEY ( tutorial_id )
+);
+
+INSERT INTO examples_db
+(tutorial_id, tutorial_title)
+VALUES
+("102", "Learn SQL");
+
+select tutorial_title from examples_db;
